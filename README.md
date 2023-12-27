@@ -26,3 +26,51 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abc1dee&" alt="abc1dee" /></p>
 
+<br>
+<h2>❗ Git Commands Cheat Sheet ❗ </h2>
+
+``` html
+
+1.  Command: git reflog
+
+Description: Displays a log of all reference changes (e.g., branch creations, rebases) in the repository, helping you recover lost commits or branches.
+Use Case: When you accidentally delete a branch or commit and need to recover it.
+Parameters: git reflog
+Example:
+git reflog
+
+2.  Command: git filter-branch
+
+Description: Rewrites branches to remove or modify commits, useful for history cleanup or repository restructuring.
+Use Case: When you need to remove sensitive information from the entire history or restructure the repository.
+Parameters: git filter-branch [options]
+Example:
+git filter-branch --commit-filter 'git_commit_non_empty_tree "$@"'
+
+3.  Command: git submodule
+
+Description: Manages Git submodules within a repository, allowing you to include other Git repositories as subdirectories.
+Use Case: When you want to include external projects or libraries in your repository while keeping them independent.
+Parameters:
+git submodule add <repository-url> [path] (to add a submodule)
+git submodule update --init --recursive (to initialize and update submodules)
+Example:
+git submodule add https://github.com/example/repo.git external/repo
+
+4.  Command: git worktree
+
+Description: Manages multiple working trees, allowing you to have multiple branches checked out simultaneously in different directories.
+Use Case: When you need to work on multiple features or bug fixes simultaneously without switching branches in the same working directory.
+Parameters:
+git worktree add <path> <branch> (to create a new working tree)
+git worktree list (to list all working trees)
+Example:
+git worktree add ../feature-branch feature-branch
+
+5.  Command: git fsck
+
+Description: Performs a file system check on the Git repository, helping to identify and repair issues in the object database.
+Use Case: When you suspect corruption in the repository or want to ensure the integrity of the Git objects.
+Parameters: git fsck
+Example:
+git fsck
