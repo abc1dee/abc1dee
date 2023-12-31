@@ -85,4 +85,24 @@ I'm Clarence, a 2nd Year Code Sorcerer pursuing my studies at Mapúa Malayan Col
      git fsck
      ```
 
+
+6. **Spell: git add**
+
+   - **Description:** This command adds changes in the working directory to the staging area.
+   - **Use Case:** git add <file> or git add . (to add all changes)
+   - **Parameters:** `git add`
+   - **Example:**
+     ```bash
+     git add myfile.txt
+     ```
+
+6. **Spell: git commit**
+
+   - **Description:** Commits the changes in the staging area to the local repository.
+   - **Use Case:** git commit -m "Commit message"
+   - **Parameters:** `git commit -m`
+   - **Example:**
+     ```bash
+     git commit -m "Added new spells"
+     ```
 Feel free to explore the magical commands and contribute to this enchanted realm! ✨🔮
